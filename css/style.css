@@ -27,11 +27,38 @@ body {
   background: white;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  height: 50px;
+  height: 60px;
   padding: 1em;
 }
+
 .main {
   background-color: #e0e5eb;
+  background: linear-gradient(to bottom, #e0e5eb 60%, white 40%);
+  height: calc(100vh - 180px);
+}
+.img-woman {
+  position: absolute;
+  width: 323px;
+  margin-left: 16%;
+  margin-top: 20vh;
+}
+
+.img-woman img {
+  width: 100%;
+}
+
+.img-groupe {
+  position: absolute;
+  width: 7px;
+  margin-left: 16%;
+}
+
+.footer {
+  height: 120px;
+  background-color: #333333;
+}
+.footer p {
+  text-align: center;
 }
 .menu {
   display: flex;
@@ -40,6 +67,11 @@ body {
   margin: 0;
   padding: 0;
   margin-right: 17%;
+}
+
+.menu li:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 .menu > li {
@@ -95,6 +127,11 @@ body {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
+}
+
+.logo {
+  padding: auto;
+  margin-left: 10%;
 }
 
 .logo-img {
